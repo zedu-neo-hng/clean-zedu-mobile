@@ -393,12 +393,14 @@ const ProfileScreen = ({ navigation }: any) => {
               value={profileData.name}
               onChangeText={val => updateField('name', val)}
               placeholder="Your name"
+              autoCapitalize="words"
             />
             <AppInput
               label="Display Name"
               value={profileData.displayName}
               onChangeText={val => updateField('displayName', val)}
               placeholder="Display name"
+              autoCapitalize="words"
             />
             <AppInput
               label="Email"
@@ -412,12 +414,14 @@ const ProfileScreen = ({ navigation }: any) => {
               value={profileData.title}
               onChangeText={val => updateField('title', val)}
               placeholder="Your title"
+              autoCapitalize="words"
             />
             <AppInput
               label="Phone"
               value={profileData.phone}
               onChangeText={val => updateField('phone', val)}
               placeholder="Your phone number"
+              keyboardType="phone-pad"
             />
           </View>
 
